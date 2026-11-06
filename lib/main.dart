@@ -111,7 +111,9 @@ class MainApp extends StatelessWidget {
                         SizedBox(width: 12),
                         Text('Lokasi'),
                         Spacer(),
-                        Text('Bandungan, Semarang')
+                        Text('Bandungan, Semarang', style: TextStyle(
+                          fontWeight: FontWeight.bold
+                        ))
                       ],
                     ),
                     Divider(height: 28),
@@ -124,7 +126,9 @@ class MainApp extends StatelessWidget {
                         SizedBox(width: 12),
                         Text('Jam Buka'),
                         Spacer(),
-                        Text('08.00-17.00')
+                        Text('08.00-17.00', style: TextStyle(
+                          fontWeight: FontWeight.bold
+                        ))
                       ],
                     ),
                     Divider(height: 28),
@@ -137,11 +141,41 @@ class MainApp extends StatelessWidget {
                         SizedBox(width: 12),
                         Text('Harga Tiket'),
                         Spacer(),
-                        Text('Rp25.000')
+                        Text('Rp25.000',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold
+                        ))
                       ],
                     ),
                   ],
                 ),
+              ),
+              const SizedBox(height: 20),
+              SizedBox(
+                width: double.infinity,
+                child: OutlinedButton(
+                  onPressed: () {}, 
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: Colors.white,
+                    backgroundColor: const Color.fromARGB(255, 38, 105, 40),
+                    padding: const EdgeInsets.all(14)
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.nordic_walking,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        'Rencanakan Kunjungan',
+                        style:  const TextStyle(
+                          color: Colors.white
+                        ),
+                      )
+                    ],
+                  ),
+                ), 
               ),
             ],
           )
