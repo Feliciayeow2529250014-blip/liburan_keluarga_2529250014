@@ -150,7 +150,7 @@ class MainApp extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 19),
               SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
